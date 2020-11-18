@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -35,35 +34,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-body {
-  background: #5cdb94 !important;
-  color: #073930;
-}
-
-.main-content{
-  /* display: none; */
-}
-
-.countingFields button, .countingFields span {
-  border: 0 aliceblue;
-  background: #389583;
-  padding: 10px 20px;
-  align-content: center;
-  font-size: 35px;
-  border: 1px solid #073930;
-  color: white;
-}
-.countingFields {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-}
-.inputField input {
-  border: 0;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
 }
