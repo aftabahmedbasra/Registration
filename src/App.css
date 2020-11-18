@@ -38,9 +38,14 @@
 }
 
 body {
-  background: #5cdb94;
+  background: #5cdb94 !important;
   color: #073930;
 }
+
+.main-content{
+  /* display: none; */
+}
+
 .countingFields button, .countingFields span {
   border: 0 aliceblue;
   background: #389583;

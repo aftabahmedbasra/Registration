@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import MyButton from './MyComponents/MyButton';
 import MyInput from './MyComponents/MyInput';
+import { Button } from 'reactstrap';
+import MyForm from './MyComponents/MyForm';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component{
   constructor(){
@@ -37,17 +39,23 @@ class App extends Component{
     
   }
 
+
   render() {
     return <div className="App">
-      <h1>My First React App</h1>
-      <h2>Counter</h2>
-      <div className="countingFields">
-        <MyButton text="-" buttonClick={this.handleClick} />
-        <span>{this.state.counter}</span>
-        <MyButton text="+" buttonClick={this.handleClick}  />
+         <h1>My First React App</h1>
+        <h2>Counter</h2>
+
+      <div className="main-content">
+        
+        <div className="countingFields">
+          <MyButton text="-" buttonClick={this.handleClick} />
+          <span>{this.state.counter}</span>
+          <MyButton text="+" buttonClick={this.handleClick}  />
+        </div>
+        
+        <MyInput iVal="0" inputChange={this.handleChange} />
       </div>
       
-      <MyInput iVal="0" inputChange={this.handleChange} />
     </div>
         
   }
