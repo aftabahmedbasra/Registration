@@ -39,9 +39,11 @@ class App extends Component{
 
   render() {
     return <div className="App">
+      <h1>My First React App</h1>
+      <h2>Counter</h2>
       <div className="countingFields">
         <MyButton text="-" buttonClick={this.handleClick} />
-        {this.state.counter}
+        <span>{this.state.counter}</span>
         <MyButton text="+" buttonClick={this.handleClick}  />
       </div>
       
