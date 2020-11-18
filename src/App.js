@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import MyButton from './MyComponents/MyButton';
 import MyInput from './MyComponents/MyInput';
-import { Button } from 'reactstrap';
-import MyForm from './MyComponents/MyForm';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -17,7 +15,7 @@ class App extends Component{
 
   handleClick = (e) => {
     let btnClicked = e.target.innerText;
-    if(btnClicked == '+'){
+    if(btnClicked === '+'){
       this.setState({
         counter: parseInt(this.state.counter) + parseInt(this.state.subOrAddValue)
       });
